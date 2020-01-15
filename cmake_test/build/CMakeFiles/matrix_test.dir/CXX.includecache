@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cet/c_plus_pj/cmake_test/include/matrix.h
+iostream
+-
+vector
+-
+map
+-
+
+/home/cet/c_plus_pj/cmake_test/main.cpp
+include/matrix.h
+/home/cet/c_plus_pj/cmake_test/include/matrix.h
+
+/home/cet/c_plus_pj/cmake_test/src/matrix.cpp
+../include/matrix.h
+/home/cet/c_plus_pj/cmake_test/include/matrix.h
+
